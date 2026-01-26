@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bigi Blaka | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <header>
+    <nav>
+        <img src="images/logo.png" alt="Logo Bigi Blaka" class="logo" title="logo">
+        <ul>
+            <li><a href="#musique">Musique</a></li>
+            <li><a href="#production">Production</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="subtitle">Manager d'expérience</p>
+                <h1>Bigi Blaka</h1>
+                <p class="description">
+                    Rappeur, Beatmaker & Producer. Créateur de sons uniques et gestionnaire de talents.
+                </p>
+                <a href="#" class="btn-main">Découvrir mes projets</a>
+            </div>
+            <div class="hero-image"></div>
+        </section>
+
+        <section id="production" class="portfolio">
+    <h2 class="section-title">Mes Services & Expertise</h2>
+    
+    <div class="grid-container">
+        <div class="card">
+            <div class="card-image rappeur">
+                <span class="badge">Artiste</span>
+            </div>
+            <div class="card-info">
+                <h3>Rappeur</h3>
+                <p>Performance scénique et écriture de textes percutants.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image beatmaker">
+                <span class="badge">Studio</span>
+            </div>
+            <div class="card-info">
+                <h3>Beatmaker / Producer</h3>
+                <p>Composition de prods originales et mixage professionnel.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image manager">
+                <span class="badge">Expérience</span>
+            </div>
+            <div class="card-info">
+                <h3>Manager</h3>
+                <p>Accompagnement d'artistes et gestion de carrière musicale.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="musique" class="projects">
+    <h2 class="section-title">Dernières Sorties</h2>
+    
+    <div class="projects-container"> 
+        
+        <div class="project-item">
+            <div class="video-placeholder">
+                <iframe src="https://www.youtube.com/embed/tPLnlV9-rYs" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <h4>Clip : LAJAN BEL</h4>
+            <p>Featuring : Schmat Heo</p>
+        </div>
+
+        <div class="project-item">
+            <div class="video-placeholder">
+                <iframe src="https://www.youtube.com/embed/FEeOwTFJkAY" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <h4>Track : K O M I K</h4>
+            <p>Featuring : Djiodji</p>
+        </div>
+
+    </div> </section>
+
+    <section id="faq" class="faq-section">
+    <h2 class="section-title">Questions Fréquentes</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-question">Comment envoyer une démo ?</button>
+            <div class="faq-answer">
+                <p>Envoie ton lien (SoundCloud, Dropbox) via le formulaire de contact ci-dessous ou directement par DM sur Instagram.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Quels sont tes tarifs de production ?</button>
+            <div class="faq-answer">
+                <p>Chaque projet est unique. Contacte-moi avec les détails de ton morceau pour obtenir un devis personnalisé (mix, mastering ou beatmaking).</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Acceptes-tu de nouveaux artistes en management ?</button>
+            <div class="faq-answer">
+                <p>Je suis toujours à l'écoute de nouveaux talents. Si ton univers correspond à l'ADN de Blaka Recordz, nous pourrons en discuter.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <h2 class="section-title">Travaillons Ensemble</h2>
+    <form action="https://formspree.io/f/mnjdpzek" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Ton Nom" required>
+        <input type="email" name="email" placeholder="Ton Email" required>
+        <textarea name="message" placeholder="Parle-moi de ton projet..." required></textarea>
+        <button type="submit" class="btn-main">Envoyer le message</button>
+        <p class="privacy-note">
+        <i class="fas fa-lock"></i> 
+        Vos informations (email, numéro) sont sécurisées et ne seront utilisées que pour répondre à votre demande.
+    </p>
+    </form>
+    
+</section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+    <footer>
+    <div class="footer-content">
+        <img src="images/logo.png" alt="Logo Blaka" class="footer-logo">
+       <div class="social-links">
+    <a href="https://www.instagram.com/bigiblaka/" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.youtube.com/@bigiblaka" target="_blank">
+        <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://open.spotify.com/artist/6nJcfxG0vQfcubQydZkBJw?si=yxzH-rvGTPWTZfclqnDQZw" target="_blank">
+        <i class="fab fa-spotify"></i>
+    </a>
+</div>
+<section id="donation" class="donation-section">
+    <div class="donation-content">
+        <h2>Soutenir Blaka Recordz</h2>
+        <p>Aidez-nous à financer les futurs projets et la production du label.</p>
+        <a href="https://www.paypal.com/ncp/payment/35WXM3Y7CJUZC" target="_blank" class="btn-donate">
+            <i class="fab fa-paypal"></i> Faire un don
+        </a>
+    </div>
+</section>
+
+</footer>
+
+<script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>

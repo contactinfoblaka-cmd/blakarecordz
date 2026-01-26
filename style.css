@@ -1,0 +1,358 @@
+/* Variables pour réutiliser les couleurs facilement */
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --orange-main: #FF8C00;
+    --dark-bg: #1a1a1a;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* NAVIGATION */
+header {
+    background: var(--white);
+    padding: 15px 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    border-radius: 10px; /* Petit border-radius sur le logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* SECTION HERO (Présentation) */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 80px 5%;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/ton-fond.jpg');
+    background-size: cover;
+    color: white;
+    min-height: 60vh;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.subtitle {
+    color: var(--orange-main);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.btn-main {
+    background-color: #E60000; /* Le rouge de Blaka Recordz */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px; /* Coins arrondis du bouton */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background-color: #e67e00;
+}
+
+.portfolio {
+    padding: 60px 5%;
+    background-color: #fff;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+/* LA GRILLE */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Crée 3 colonnes automatiques */
+    gap: 30px; /* Espace entre les cartes */
+}
+
+/* LES CARTES */
+.card {
+    background: #f9f9f9;
+    border-radius: 15px; /* Notre fameux border-radius */
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Petit effet de soulèvement au survol */
+}
+
+.card-image {
+    height: 250px;
+    background-color: #ddd; /* Couleur grise en attendant tes photos */
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+/* STYLE DES BADGES ORANGES */
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--orange-main);
+    color: white;
+    padding: 5px 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.card-info {
+    padding: 20px;
+}
+
+.card-info h3 {
+    margin: 0 0 10px 0;
+    color: var(--dark-bg);
+}
+
+.rappeur { background-image: url('images/photo-scene.jpg'); }
+.beatmaker { background-image: url('images/photo-studio.jpg'); }
+.manager { background-image: url('images/photo-bureau.jpg'); }
+
+.video-placeholder {
+    background: #333;
+    height: 200px; /* Force une hauteur pour que YouTube accepte de charger */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.video-placeholder iframe {
+    width: 100%;
+    height: 100%; /* La vidéo doit remplir tout le bloc noir */
+    border: none;
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center; /* Pour centrer vos deux vidéos */
+}
+
+/* SECTION CONTACT */
+.contact-section { padding: 60px 5%; background-color: var(--dark-bg); color: white; }
+.contact-form { max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
+.contact-form input, .contact-form textarea { padding: 15px; border-radius: 8px; border: none; font-family: 'Inter', sans-serif; }
+.contact-form textarea { height: 150px; }
+
+footer {
+    background-color: #111;
+    color: white;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.footer-logo {
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espace entre les icônes */
+}
+
+.social-links a {
+    color: #E60000; /* Ton rouge Blaka Recordz */
+    font-size: 2rem; /* Taille de l'icône */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: white;
+    transform: translateY(-5px); /* Petit effet de saut au survol */
+}
+
+/* OPTIMISATION MOBILE */
+@media (max-width: 768px) {
+    /* On empile les éléments au lieu de les mettre côte à côte */
+    .nav-links {
+        display: none; /* Cache le menu texte pour l'instant (on pourra faire un menu burger plus tard) */
+    }
+
+    .hero {
+        text-align: center;
+        padding: 60px 5%;
+        height: auto;
+        min-height: 80vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem; /* Réduit la taille du titre Bigi Blaka sur mobile */
+    }
+
+    /* Les boîtes de services (Rappeur, Manager) s'empilent */
+    .projects-container, .services-container {
+        grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+        gap: 20px;
+    }
+
+    .project-item {
+        margin-bottom: 20px;
+    }
+
+    /* Le formulaire de contact prend toute la largeur */
+    .contact-form {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+.faq-section {
+    padding: 60px 5%;
+    background-color: #1a1a1a;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border: 1px solid #333;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+    text-align: left;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.faq-question:hover {
+    color: #E60000; /* Ton rouge Blaka */
+}
+
+.faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #111;
+    transition: max-height 0.3s ease-out;
+}
+
+.faq-answer p {
+    padding: 20px 0;
+    color: #ccc;
+}
+
+/* Classe pour l'ouverture via JavaScript */
+.faq-item.active .faq-answer {
+    max-height: 200px;
+}
+
+.faq-item.active .faq-question {
+    color: #E60000;
+}
+
+.privacy-note {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 15px;
+    text-align: center;
+    font-style: italic;
+}
+
+.privacy-note i {
+    color: #E60000; /* Le rouge de ton logo pour l'icône cadenas */
+    margin-right: 5px;
+}
+
+.donation-section {
+    padding: 60px 5%;
+    background-color: #0a0a0a;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.donation-content h2 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.donation-content p {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.btn-donate {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #E60000; /* Ton rouge */
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-donate:hover {
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+
+.btn-donate i {
+    font-size: 1.2rem;
+}
