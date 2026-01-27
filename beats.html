@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue Beats | Bigi Blaka</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
+        <ul>
+            <li><a href="index.html#musique">Musique</a></li>
+            <li><a href="realisations.html">Vidéos</a></li>
+            <li><a href="hits.html">Hits</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="beats-page">
+    <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour</a>
+    <h2 class="section-title">Catalogue d'Instrumentales</h2>
+    <p style="text-align:center; color:#666; margin-bottom:40px;">Écoutez mes dernières prods. Contactez-moi pour les licences exclusives.</p>
+
+    <div class="beats-list">
+        <div class="beat-item">
+            <div class="beat-info">
+                <span class="badge">TRAP</span>
+                <h3>WU-TANG-CLAN 90s Boom Bap Chill</h3>
+                <p>88 BPM - Key: Bb Minor</p>
+            </div>
+            <audio controls controlsList="nodownload">
+                <source src="audio/boombap_dark_blaka.mp3" type="audio/mpeg">
+                Ton navigateur ne supporte pas le lecteur audio.
+            </audio>
+            <a href="https://wa.me/50937233626?text=Salut, je suis intéressé par le beat NomDuBeat1" class="btn-wa">
+                <i class="fab fa-whatsapp"></i> Acheter
+            </a>
+        </div>
+
+        <div class="beat-item">
+            <div class="beat-info">
+                <span class="badge">DRILL</span>
+                <h3>TRAVIS SCOTT Trap Type Beat</h3>
+                <p>76 BPM - Key: G Minor</p>
+            </div>
+            <audio controls controlsList="nodownload">
+                <source src="audio/trap_dark_blaka.mp3" type="audio/mpeg">
+            </audio>
+            <a href="https://wa.me/50937233626?text=Salut, je suis intéressé par le beat NomDuBeat2" class="btn-wa">
+                <i class="fab fa-whatsapp"></i> Acheter
+            </a>
+        </div>
+
+        <div class="beat-item">
+            <div class="beat-info">
+                <span class="badge">DRILL</span>
+                <h3>EUPHORIA R&b Type Beat</h3>
+                <p>75 BPM - Key: C Major</p>
+            </div>
+            <audio controls controlsList="nodownload">
+                <source src="audio/r&b_dark_blaka.mp3" type="audio/mpeg">
+            </audio>
+            <a href="https://wa.me/50937233626?text=Salut, je suis intéressé par le beat NomDuBeat2" class="btn-wa">
+                <i class="fab fa-whatsapp"></i> Acheter
+            </a>
+        </div>
+
+        <div class="beat-item">
+            <div class="beat-info">
+                <span class="badge">DRILL</span>
+                <h3>BLOCK Uk-Drill Type Beat</h3>
+                <p>143 BPM - Key: Eb Minor</p>
+            </div>
+            <audio controls controlsList="nodownload">
+                <source src="audio/drill_dark_blaka.mp3" type="audio/mpeg">
+            </audio>
+            <a href="https://wa.me/50937233626?text=Salut, je suis intéressé par le beat NomDuBeat2" class="btn-wa">
+                <i class="fab fa-whatsapp"></i> Acheter
+            </a>
+        </div>
+
+        <div class="beat-item">
+            <div class="beat-info">
+                <span class="badge">DRILL</span>
+                <h3>THE DEATH Hip-Hop Type Beat</h3>
+                <p>144 BPM - Key: B Minor</p>
+            </div>
+            <audio controls controlsList="nodownload">
+                <source src="audio/rap_dark_blaka.mp3" type="audio/mpeg">
+            </audio>
+            <a href="https://wa.me/50937233626?text=Salut, je suis intéressé par le beat NomDuBeat2" class="btn-wa">
+                <i class="fab fa-whatsapp"></i> Acheter
+            </a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <footer>
+    <div class="footer-content">
+        <img src="images/logo.png" alt="Logo Blaka" class="footer-logo">
+        <p class="collab-text">
+            Productions d'instrumentales réalisées et supervisées par <strong>Bigi Blaka</strong> chez <strong>Blaka Recordz</strong>.
+        </p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/bigiblaka/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@bigiblaka" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2026 Blaka Recordz. Tous droits réservés.</p>
+    </div>
+</footer>
+
+</footer>
+
+<a href="#" class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+<a href="https://wa.me/50937233626?text=Bonjour%20Blaka%20Recordz,%20j'aimerais%20avoir%20des%20informations%20sur..." 
+   class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.onscroll = function() {
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+            backToTop.classList.add("show");
+        } else {
+            backToTop.classList.remove("show");
+        }
+    };
+</script>
+    </footer>
+
+</body>
+</html>

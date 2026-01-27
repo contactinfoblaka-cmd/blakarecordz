@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réalisations Vidéo | Bigi Blaka</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" alt="Logo Bigi Blaka" class="logo"></a>
+        <ul>
+            <li><a href="index.html#musique">Musique</a></li>
+            <li><a href="index.html#production">Production</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour à l'accueil</a>
+    
+    <h2 class="section-title">Mes Réalisations Vidéo</h2>
+
+    <div class="video-grid">
+        <div class="video-card">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/JHMoiP5uopE" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+                <h3>Bigi Blaka</h3>
+                <p>Se Konsa'w Te Ye La — 2022</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/HmnmrB9YhIA" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+                <h3>Kagoul Nan Tet</h3>
+                <p>Problèm Gaz — 2021</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/A3_kdnhqOJM" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+                <h3>WA-MG</h3>
+                <p>Omaj A Mikaben — 2021</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/9jNNudR-FPo" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+                <h3>Ca Va Ca Vient</h3>
+                <p>Ou Ta Dwe Wont Machè — 2020</p>
+            </div>
+        </div>
+        
+        <div class="video-card">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/dwTEHSoY2EA" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+                <h3>Fèl Ak Level Ou</h3>
+                <p>Bigi Blaka X Figi Biznis X One Pull-Up X Savage X Top Zoe — 2020</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/Lx4l81EDxo8" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+                <h3>Djou Dexter X KOLONEL & ROCKER-F.</h3>
+                <p>Pull-up An Bet — 2020</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <img src="images/logo.png" alt="Logo Blaka" class="footer-logo">
+        
+        <p class="collab-text">
+            Ces vidéos sont réalisées par <strong>Black Contrast Entertainment</strong>, 
+            une compagnie faisant partie de <strong>Blaka Recordz</strong>, 
+            en collaboration avec d'autres compagnies de vidéographie.
+        </p>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/bigiblaka/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@bigiblaka" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2026 Blaka Recordz. Tous droits réservés.</p>
+    </div>
+</footer>
+
+<a href="#" class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+<a href="https://wa.me/50937233626?text=Bonjour%20Blaka%20Recordz,%20j'aimerais%20avoir%20des%20informations%20sur..." 
+   class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.onscroll = function() {
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+            backToTop.classList.add("show");
+        } else {
+            backToTop.classList.remove("show");
+        }
+    };
+</script>
+
+</body>
+</html>

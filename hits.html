@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Hits | Bigi Blaka Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" alt="Logo Bigi Blaka" class="logo"></a>
+        <ul>
+            <li><a href="index.html#musique">Musique</a></li>
+            <li><a href="index.html#production">Production</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour à l'accueil</a>
+    
+    <h2 class="section-title">Productions & Hits</h2>
+
+    <div class="video-grid">
+        <div class="video-card">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/wQCLN2pvFjY" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+                <h3>Ou lèd</h3>
+                <p>Junction Plug x C.C.P — 2019</p>
+            </div>
+        </div>
+
+                <div class="video-card">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/TuZjGjoMPOw" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+                <h3>FLIP-FLAP</h3>
+                <p>Iceberg X Junction P. — 2019</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/If42m_9bjSA" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+                <h3>APAW FISTRE</h3>
+                <p>Keke Le Roi x T-Prince TRG x Junction P. — 2020</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/9UI5qua9ITs" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+                <h3>An CIBOGUE</h3>
+                <p>Dope Family — 2022</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/P_csiUi9HSs" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+                <h3>BACKUP MALADREN</h3>
+                <p>Keke Le Roi x 300-maladren X Ekilib — 2023</p>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/KXHXWC6bS98" allowfullscreen></iframe>
+            </div>
+            <div class="video-details">
+                <h3>BYEN RAPID</h3>
+                <p>2G X MJ-Flex X Shmat Heo — 2024</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <img src="images/logo.png" alt="Logo Blaka" class="footer-logo">
+        <p class="collab-text">
+            Productions musicales réalisées et supervisées par <strong>Bigi Blaka</strong> chez <strong>Blaka Recordz</strong>.
+        </p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/bigiblaka/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@bigiblaka" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2026 Blaka Recordz. Tous droits réservés.</p>
+    </div>
+</footer>
+
+</footer>
+
+<a href="#" class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+<a href="https://wa.me/50937233626?text=Bonjour%20Blaka%20Recordz,%20j'aimerais%20avoir%20des%20informations%20sur..." 
+   class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.onscroll = function() {
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+            backToTop.classList.add("show");
+        } else {
+            backToTop.classList.remove("show");
+        }
+    };
+</script>
+
+</body>
+</html>
