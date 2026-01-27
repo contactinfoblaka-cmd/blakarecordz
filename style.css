@@ -353,6 +353,10 @@ footer {
     transform: scale(1.05);
 }
 
+.btn-donate i {
+    font-size: 1.2rem;
+}
+
 .back-to-top {
     position: fixed;
     bottom: 30px;
@@ -384,11 +388,30 @@ footer {
     transform: translateY(-5px);
 }
 
-.btn-donate i {
-    font-size: 1.2rem;
-
-}
-
 html {
     scroll-behavior: smooth;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    left: 30px; /* À gauche pour ne pas gêner le bouton "Retour en haut" */
+    background-color: #25d366;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    color: white;
+    background-color: #128c7e;
 }
