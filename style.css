@@ -31,6 +31,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 5%;
+    background-color: #000;
 }
 
 .logo {
@@ -89,7 +91,39 @@ nav a {
     color: #333;
     font-weight: bold;
 }
+.nav-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Centre le menu par rapport au logo */
+}
 
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px; /* Augmente l'espace entre les mots */
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff !important; /* Force le texte en blanc pur pour la visibilité */
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--orange-main) !important; /* Ton orange au survol */
+}
+
+/* Style spécifique pour l'icône de recherche */
+.search-trigger {
+    color: var(--orange-main) !important;
+    font-size: 1.1rem;
+    padding-left: 10px;
+}
 
 .hero {
     display: flex;
@@ -640,6 +674,7 @@ audio {
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
 }
+
 
 
 
