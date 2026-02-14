@@ -30,12 +30,15 @@
 <nav>
     <img src="images/logo.png" alt="Logo Bigi Blaka" class="logo" title="logo">
     <div class="nav-container">
-        <ul>
-            <li><a href="#musique">Musique</a></li>
-            <li><a href="#production">Production</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#" class="search-trigger"><i class="fas fa-search"></i></a></li>
-        </ul>
+    <ul>
+    <li><a href="#musique">Musique</a></li>
+    <li><a href="#production">Production</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li style="display: flex; align-items: center;">
+    <input type="text" id="searchBar" placeholder="Rechercher..." style="display:none; margin-right:10px; padding:5px; border-radius:5px; border:none;">
+    <i class="fas fa-search search-icon" id="searchBtn" style="color: #FF8C00; cursor:pointer;"></i>
+</li>
+</ul>
     </div>
 </nav>
 </header>
@@ -234,6 +237,7 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
