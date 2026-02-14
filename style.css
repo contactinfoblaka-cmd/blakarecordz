@@ -13,7 +13,7 @@ body {
     margin: 0;
     font-family: 'Inter', sans-serif;
     background-color: #000000;
-    color: #ffffff;
+    color: #333;
 }
 
 
@@ -640,5 +640,6 @@ audio {
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
 }
+
 
 
