@@ -1,4 +1,4 @@
-/* Variables pour réutiliser les couleurs facilement */
+
 html {
     scroll-behavior: smooth;
 }
@@ -12,11 +12,11 @@ html {
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #000000;
+    color: #ffffff;
 }
 
-/* NAVIGATION */
+
 .header-top {
     background: #111;
     color: #888;
@@ -35,7 +35,7 @@ nav {
 
 .logo {
     height: 70px;
-    border-radius: 10px; /* Petit border-radius sur le logo */
+    border-radius: 10px; 
 }
 
 .home-icon {
@@ -90,7 +90,7 @@ nav a {
     font-weight: bold;
 }
 
-/* SECTION HERO (Présentation) */
+
 .hero {
     display: flex;
     align-items: center;
@@ -124,11 +124,11 @@ h1 {
 }
 
 .btn-main {
-    background-color: #E60000; /* Le rouge de Blaka Recordz */
+    background-color: #E60000; 
     color: white;
     padding: 15px 30px;
     text-decoration: none;
-    border-radius: 8px; /* Coins arrondis du bouton */
+    border-radius: 8px; 
     font-weight: bold;
     transition: 0.3s;
 }
@@ -148,11 +148,11 @@ h1 {
     font-size: 2rem;
 }
 
-/* LA GRILLE */
+
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Crée 3 colonnes automatiques */
-    gap: 30px; /* Espace entre les cartes */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
 }
 
 /* LES CARTES */
@@ -640,3 +640,4 @@ audio {
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
 }
+
