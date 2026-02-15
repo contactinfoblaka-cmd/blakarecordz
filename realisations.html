@@ -3,6 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blaka Recordz - Label de musique, studio d'enregistrement et production vidéo dirigé par Bigi Blaka. Découvrez nos hits, notre catalogue de beats et nos réalisations.">
+    <meta name="keywords" content="Bigi Blaka, Blaka Recordz, BMG, Beatmaker Haïti, Studio Enregistrement, Production Vidéo, Rap Créole">
+    <meta name="author" content="Bigi Blaka">
+
+    <meta property="og:title" content="Bigi Blaka | Blaka Recordz & BMG">
+    <meta property="og:description" content="Producteur, Beatmaker et Manager. L'excellence au service de la musique urbaine.">
+    <meta property="og:image" content="https://blakarecordz.com/images/photo-studio1.jpg">
+    <meta property="og:url" content="https://blakarecordz.com">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bigi Blaka | Blaka Recordz">
+    <meta name="twitter:description" content="Studio d'enregistrement et Label de musique.">
+    <meta name="twitter:image" content="https://blakarecordz.com/images/photo-studio1.jpg">
     <title>Réalisations Vidéo | Bigi Blaka</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -14,12 +28,21 @@
 
 <header>
     <nav>
-        <a href="index.html"><img src="images/logo.png" alt="Logo Bigi Blaka" class="logo"></a>
-        <ul>
-            <li><a href="index.html#musique">Musique</a></li>
-            <li><a href="index.html#production">Production</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-        </ul>
+        <a href="./">
+            <img src="images/logo.png" alt="Logo Bigi Blaka" class="logo" title="logo">
+        </a>
+        <div class="nav-container">
+            <ul>
+                <li><a href="./">Accueil</a></li>
+                <li><a href="#musique">Musique</a></li>
+                <li><a href="#production">Production</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li style="display: flex; align-items: center;">
+                    <input type="text" id="searchBar" placeholder="Rechercher..." style="display:none; margin-right:10px; padding:5px; border-radius:5px; border:none;">
+                    <i class="fas fa-search search-icon" id="searchBtn" style="color: #FF8C00; cursor:pointer;"></i>
+                </li>
+            </ul>
+        </div>
     </nav>
 </header>
 
@@ -129,6 +152,8 @@
         }
     };
 </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
+
