@@ -1,250 +1,690 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Blaka Recordz - Label de musique, studio d'enregistrement et production vidéo dirigé par Bigi Blaka. Découvrez nos hits, notre catalogue de beats et nos réalisations.">
-    <meta name="keywords" content="Bigi Blaka, Blaka Recordz, BMG, Beatmaker Haïti, Studio Enregistrement, Production Vidéo, Rap Créole">
-    <meta name="author" content="Bigi Blaka">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- ══ SEO META ══ -->
+  <meta name="description" content="Blaka Recordz est le label et studio de production musicale de Bigi Blaka basé en Haïti. Beats, mixage, mastering, clips vidéo et management artistes depuis 2014."/>
+  <meta name="keywords" content="Blaka Recordz, Bigi Blaka, studio enregistrement Haïti, beatmaker Haïti, rap haïtien, mix mastering, BMG, Black Contrast Entertainment"/>
+  <meta name="author" content="Bigi Blaka — Blaka Recordz"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="theme-color" content="#080808"/>
+  <meta name="geo.region" content="HT"/>
+  <link rel="canonical" href="https://blakarecordz.com/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Blaka Recordz"/>
+  <meta property="og:title" content="Blaka Recordz | Studio Bigi Blaka — Beatmaker, Rap Haïtien, Mix &amp; Mastering"/>
+  <meta property="og:description" content="Label et studio de production musicale de Bigi Blaka en Haïti. Beats, mixage, mastering, clips vidéo."/>
+  <meta property="og:url" content="https://blakarecordz.com/"/>
+  <meta property="og:image" content="https://blakarecordz.com/images/logo.png"/>
+  <meta property="og:image:width" content="1008"/>
+  <meta property="og:image:height" content="1055"/>
+  <meta property="og:locale" content="fr_HT"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@bigiblaka"/>
+  <meta name="twitter:title" content="Blaka Recordz | Studio Bigi Blaka"/>
+  <meta name="twitter:description" content="Label et studio de production musicale de Bigi Blaka en Haïti."/>
+  <meta name="twitter:image" content="https://blakarecordz.com/images/logo.png"/>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"MusicGroup","name":"Blaka Recordz","alternateName":"Bigi Blaka","url":"https://blakarecordz.com/","logo":"https://blakarecordz.com/images/logo.png","description":"Label et studio de production musicale de Bigi Blaka basé en Haïti.","genre":["Hip-Hop","Trap","Drill","R&B","Dancehall"],"sameAs":["https://www.instagram.com/bigiblaka/","https://www.facebook.com/bigiblaka","https://www.youtube.com/@bigiblaka","https://open.spotify.com/intl-fr/artist/6nJcfxG0vQfcubQydZkBJw","https://music.apple.com/fr/artist/bigi-blaka/1842570494"]}
+  </script>
+  <title>Blaka Recordz | Studio de Bigi Blaka</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--gold:#c9a84c;--gold2:#e8c96b;--gold-dim:rgba(201,168,76,.12)}
+    [data-theme="dark"]{--bg:#080808;--bg2:#0f0f0f;--surface:#161616;--border:#232323;--muted:#777;--body:#b8b8b8;--heading:#f0f0f0;--nav-bg:rgba(8,8,8,.96)}
+    [data-theme="light"]{--bg:#f5f4f0;--bg2:#ebebeb;--surface:#fff;--border:#d8d4cc;--muted:#888;--body:#3a3a3a;--heading:#111;--nav-bg:rgba(245,244,240,.96)}
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--body);font-family:'DM Sans',sans-serif;font-weight:300;overflow-x:hidden;transition:background .4s,color .4s}
+    body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");opacity:.022;pointer-events:none;z-index:9998}
+    .label{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:14px}
+    .display{font-family:'Bebas Neue',sans-serif;color:var(--heading);line-height:.92;letter-spacing:1px}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:center;justify-content:space-between;padding:22px 56px;transition:background .3s,padding .3s,border-bottom .3s}
+    #nav.stuck{background:var(--nav-bg);backdrop-filter:blur(18px);padding:14px 56px;border-bottom:1px solid var(--border)}
+    .nav-logo{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:4px;color:var(--heading);text-decoration:none;display:flex;align-items:center;gap:12px}
+    .logo-svg{width:36px;height:36px;flex-shrink:0}
+    .nav-right{display:flex;align-items:center;gap:24px}
+    .nav-links{display:flex;gap:20px;list-style:none}
+    .nav-links a{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s}
+    .nav-links a:hover{color:var(--gold)}
+    .theme-toggle{background:var(--surface);border:1px solid var(--border);width:50px;height:27px;border-radius:14px;position:relative;cursor:pointer;flex-shrink:0;transition:border-color .2s}
+    .theme-toggle:hover{border-color:var(--gold)}
+    .toggle-ball{position:absolute;top:3px;left:3px;width:19px;height:19px;background:var(--gold);border-radius:50%;transition:transform .3s cubic-bezier(.34,1.56,.64,1);display:flex;align-items:center;justify-content:center;font-size:10px}
+    [data-theme="light"] .toggle-ball{transform:translateX(23px)}
+    .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+    .hamburger span{display:block;width:22px;height:1.5px;background:var(--heading);transition:all .3s}
+    .mobile-menu{display:none;position:fixed;inset:0;z-index:490;background:var(--bg);flex-direction:column;align-items:center;justify-content:center;gap:28px}
+    .mobile-menu.open{display:flex}
+    .mobile-menu a{font-family:'Bebas Neue',sans-serif;font-size:44px;letter-spacing:4px;color:var(--heading);text-decoration:none;transition:color .2s}
+    .mobile-menu a:hover{color:var(--gold)}
+    /* LAYOUT */
+    .container{max-width:1200px;margin:0 auto;padding:0 56px}
+    section{padding:110px 0}
+    .section-header{margin-bottom:60px}
+    .section-header-row{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px}
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;cursor:pointer;border:none;padding:15px 32px;transition:transform .2s,background .2s,color .2s,border-color .2s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-gold{background:var(--gold);color:#080808}
+    .btn-gold:hover{background:var(--gold2)}
+    .btn-outline{background:transparent;border:1px solid var(--border);color:var(--body)}
+    .btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+    .btn-wa{background:#25D366;color:#fff}
+    .btn-wa:hover{background:#1fb855}
+    .btn-paypal{background:#0070ba;color:#fff}
+    .btn-paypal:hover{background:#005ea6}
+    /* HERO IMAGE */
+    #home-hero{min-height:56vh;display:flex;align-items:flex-end;position:relative;overflow:hidden;padding:0}
+    .hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1600&q=80&auto=format&fit=crop');background-size:cover;background-position:center 38%;filter:brightness(.2) saturate(.5)}
+    .hero-fade{position:absolute;inset:0;background:linear-gradient(to top,var(--bg) 0%,rgba(8,8,8,.3) 50%,transparent 100%)}
+    .hero-inner{position:relative;z-index:2;padding:130px 0 68px}
+    .hero-eyebrow{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);margin-bottom:18px;opacity:0;animation:riseIn .7s .2s forwards}
+    .hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(70px,13vw,150px);line-height:.88;letter-spacing:2px;color:var(--heading);opacity:0;animation:riseIn .8s .35s forwards}
+    .hero-title em{font-style:normal;color:var(--gold)}
+    .hero-desc{margin-top:22px;font-size:16px;color:var(--muted);max-width:520px;line-height:1.75;opacity:0;animation:riseIn .8s .5s forwards}
+    .hero-actions{margin-top:36px;display:flex;gap:16px;flex-wrap:wrap;opacity:0;animation:riseIn .8s .65s forwards}
+    .hero-scroll{position:absolute;bottom:36px;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0;animation:fadeIn .8s 1.2s forwards}
+    .hero-scroll span{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--muted)}
+    .scroll-bar{width:1px;height:44px;background:linear-gradient(to bottom,var(--gold),transparent);animation:pulse 2s infinite}
+    /* TICKER */
+    .ticker-wrap{overflow:hidden;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--surface);padding:13px 0}
+    .ticker-track{display:flex;gap:56px;animation:ticker 22s linear infinite;white-space:nowrap}
+    .ticker-item{font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:3px;color:var(--muted);flex-shrink:0}
+    .ticker-dot{color:var(--gold);margin:0 4px}
+    /* PARTNERS */
+    #partners{background:var(--bg2);padding:72px 0}
+    .partners-label{text-align:center;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--muted);margin-bottom:40px}
+    .partners-row{display:flex;justify-content:center;align-items:center;flex-wrap:wrap}
+    .partner-card{padding:28px 56px;border-right:1px solid var(--border);text-align:center;transition:background .2s}
+    .partner-card:last-child{border-right:none}
+    .partner-card:hover{background:var(--gold-dim)}
+    .partner-name{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:3px;color:var(--heading);margin-bottom:4px}
+    .partner-sub{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:2px;color:var(--muted);text-transform:uppercase}
+    /* SERVICES */
+    #services{background:var(--bg)}
+    .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
+    .svc-card{background:var(--bg);padding:44px 32px;position:relative;overflow:hidden;transition:background .3s}
+    .svc-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.4,0,.2,1)}
+    .svc-card:hover{background:var(--surface)}
+    .svc-card:hover::after{transform:scaleX(1)}
+    .svc-num{font-family:'Space Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:2px;margin-bottom:28px}
+    .svc-icon{font-size:32px;display:block;margin-bottom:20px}
+    .svc-card h3{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:1px;color:var(--heading);margin-bottom:12px}
+    .svc-card p{font-size:13px;color:var(--muted);line-height:1.7}
+    .svc-tag{margin-top:24px;display:inline-block;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,168,76,.25);padding:5px 12px}
+    /* BOOKING */
+    #reservation{background:var(--bg);padding:0}
+    .booking-band{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--surface);padding:80px 56px;display:flex;align-items:center;justify-content:space-between;gap:48px;flex-wrap:wrap;position:relative;overflow:hidden}
+    .booking-band::before{content:'STUDIO';position:absolute;right:-10px;top:-20px;font-family:'Bebas Neue',sans-serif;font-size:180px;color:rgba(201,168,76,.03);pointer-events:none}
+    .booking-text h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,5vw,60px);color:var(--heading);margin-bottom:10px}
+    .booking-text p{font-size:15px;color:var(--muted);max-width:480px;line-height:1.7}
+    .booking-actions{display:flex;gap:14px;flex-wrap:wrap}
+    /* COLLABORATIONS */
+    #collabs{background:var(--bg);padding:110px 0;overflow:hidden}
+    .collab-track-outer{position:relative;overflow:hidden;margin-top:52px}
+    .collab-track-outer::before,.collab-track-outer::after{content:'';position:absolute;top:0;bottom:0;width:180px;z-index:2;pointer-events:none}
+    .collab-track-outer::before{left:0;background:linear-gradient(to right,var(--bg),transparent)}
+    .collab-track-outer::after{right:0;background:linear-gradient(to left,var(--bg),transparent)}
+    .collab-track{display:flex;gap:22px;width:max-content;animation:collabScroll 30s linear infinite}
+    .collab-track:hover{animation-play-state:paused}
+    @keyframes collabScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    .collab-card{flex-shrink:0;width:270px;position:relative;overflow:hidden;border:1px solid var(--border);text-decoration:none;display:block;transition:border-color .35s,transform .35s}
+    .collab-card:hover{border-color:var(--gold);transform:translateY(-8px)}
+    .collab-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.4,0,.2,1)}
+    .collab-card:hover::after{transform:scaleX(1)}
+    .collab-img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top center;display:block;filter:grayscale(30%) contrast(1.1) brightness(.78);transition:filter .45s,transform .45s}
+    .collab-card:hover .collab-img{filter:grayscale(0%) contrast(1.05) brightness(.65);transform:scale(1.05)}
+    .collab-info{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(4,4,4,.96) 0%,rgba(4,4,4,.55) 55%,transparent 100%);padding:52px 18px 20px}
+    .collab-tag{font-family:'Space Mono',monospace;font-size:8px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:6px}
+    .collab-name{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:1px;color:#fff;line-height:1;display:block;margin-bottom:4px}
+    .collab-desc{font-size:11px;color:rgba(255,255,255,.5);line-height:1.4}
+    /* HITS */
+    #hits{background:var(--bg2)}
+    .hits-yt-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+    .yt-wrap{background:var(--surface);border:1px solid var(--border);overflow:hidden;transition:border-color .3s,transform .25s}
+    .yt-wrap:hover{border-color:var(--gold);transform:translateY(-3px)}
+    .yt-frame-box{position:relative;width:100%;aspect-ratio:16/9;background:#000}
+    .yt-frame-box iframe{position:absolute;inset:0;width:100%;height:100%;border:none;display:block}
+    .yt-meta{padding:16px 20px 20px;border-top:1px solid var(--border)}
+    .yt-tag{font-family:'Space Mono',monospace;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:6px;display:block}
+    .yt-title{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:1px;color:var(--heading);margin-bottom:2px;line-height:1}
+    .yt-sub{font-size:12px;color:var(--muted)}
+    .hits-voir-plus-area{margin-top:44px;display:flex;flex-direction:column;align-items:center;gap:36px}
+    .btn-voir-plus{display:inline-flex;align-items:center;gap:14px;font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;background:transparent;border:1px solid var(--border);color:var(--body);cursor:pointer;padding:16px 40px;transition:border-color .2s,color .2s,transform .2s}
+    .btn-voir-plus:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+    .btn-chevron{width:22px;height:22px;border:1px solid currentColor;display:flex;align-items:center;justify-content:center;font-size:13px;transition:transform .35s cubic-bezier(.4,0,.2,1)}
+    .btn-voir-plus.open .btn-chevron{transform:rotate(180deg)}
+    .hits-extra-wrap{width:100%;max-height:0;overflow:hidden;opacity:0;transition:max-height .75s cubic-bezier(.4,0,.2,1),opacity .45s .1s}
+    .hits-extra-wrap.open{max-height:1600px;opacity:1}
+    .hits-yt-grid-extra{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+    /* CONTACT */
+    #contact{background:var(--bg2)}
+    .contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:80px}
+    .contact-block h3{font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:1px;color:var(--heading);margin-bottom:28px}
+    .contact-infos{display:flex;flex-direction:column;gap:18px;margin-bottom:36px}
+    .cinfo-row{display:flex;align-items:center;gap:14px}
+    .cinfo-icon{width:40px;height:40px;background:var(--gold-dim);border:1px solid rgba(201,168,76,.2);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+    .cinfo-label{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+    .cinfo-value{font-size:14px;color:var(--heading);text-decoration:none;transition:color .2s}
+    a.cinfo-value:hover{color:var(--gold)}
+    .contact-ctas{display:flex;flex-direction:column;gap:12px;margin-bottom:32px}
+    .map-container{width:100%;overflow:hidden;border:1px solid var(--border)}
+    .form-group{margin-bottom:18px}
+    .form-group label{display:block;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+    .form-group input,.form-group textarea,.form-group select{width:100%;background:var(--surface);border:1px solid var(--border);color:var(--heading);padding:13px 16px;font-family:'DM Sans',sans-serif;font-size:14px;outline:none;transition:border-color .2s;appearance:none}
+    .form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--gold)}
+    .form-group textarea{resize:vertical;min-height:110px}
+    .form-row-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .form-note{font-size:11px;color:var(--muted);margin-top:10px;line-height:1.6}
+    /* DONATION */
+    #donation{background:var(--bg);padding:80px 0}
+    .donation-inner{border:1px solid var(--border);background:var(--surface);padding:56px 48px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;position:relative;overflow:hidden}
+    .donation-text h3{font-family:'Bebas Neue',sans-serif;font-size:36px;letter-spacing:1px;color:var(--heading);margin-bottom:8px}
+    .donation-text p{font-size:14px;color:var(--muted);max-width:460px;line-height:1.7}
+    /* FOOTER */
+    footer{border-top:1px solid var(--border);background:var(--bg);padding:48px 56px 40px}
+    .footer-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:40px;margin-bottom:48px}
+    .footer-brand{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:4px;color:var(--heading);display:flex;align-items:center;gap:10px;margin-bottom:12px}
+    .footer-brand span{color:var(--gold)}
+    .footer-tagline{font-size:13px;color:var(--muted)}
+    .footer-links h4{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+    .footer-links ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+    .footer-links a{font-size:13px;color:var(--muted);text-decoration:none;transition:color .2s}
+    .footer-links a:hover{color:var(--heading)}
+    .footer-bottom{border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+    .footer-copy{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:1.5px;color:var(--muted)}
+    .footer-socials{display:flex;gap:10px}
+    .footer-social{width:36px;height:36px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--muted);text-decoration:none;font-family:'Space Mono',monospace;font-size:10px;transition:border-color .2s,color .2s}
+    .footer-social:hover{border-color:var(--gold);color:var(--gold)}
+    /* SCROLL TOP */
+    #scrollTop{position:fixed;bottom:32px;right:32px;width:48px;height:48px;background:var(--gold);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:20px;color:#080808;z-index:400;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s,background .2s;font-weight:bold}
+    #scrollTop.visible{opacity:1;pointer-events:all}
+    #scrollTop:hover{background:var(--gold2);transform:translateY(-3px)}
+    /* ANIMATIONS */
+    @keyframes riseIn{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes fadeIn{to{opacity:1}}
+    @keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+    @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    .reveal{opacity:0;transform:translateY(22px);transition:opacity .65s cubic-bezier(.4,0,.2,1),transform .65s cubic-bezier(.4,0,.2,1)}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    /* RESPONSIVE */
+    @media(max-width:1080px){.nav-links{gap:14px}}
+    @media(max-width:960px){
+      #nav,#nav.stuck{padding:18px 24px}
+      .nav-links{display:none}
+      .hamburger{display:flex}
+      .container{padding:0 24px}
+      section{padding:80px 0}
+      .services-grid{grid-template-columns:1fr 1fr}
+      .hits-yt-grid,.hits-yt-grid-extra{grid-template-columns:1fr}
+      .contact-grid{grid-template-columns:1fr;gap:48px}
+      .form-row-2{grid-template-columns:1fr}
+      .partners-row{flex-direction:column}
+      .partner-card{border-right:none;border-bottom:1px solid var(--border)}
+      .partner-card:last-child{border-bottom:none}
+      .booking-band{padding:56px 24px}
+      footer{padding:40px 24px 32px}
+      .donation-inner{padding:40px 24px}
+      .collab-card{width:230px}
+      .collab-track-outer::before,.collab-track-outer::after{width:60px}
+    }
+    @media(max-width:600px){
+      .services-grid{grid-template-columns:1fr}
+      .collab-card{width:195px}
+    }
 
-    <meta property="og:title" content="Bigi Blaka | Blaka Recordz & BMG">
-    <meta property="og:description" content="Producteur, Beatmaker et Manager. L'excellence au service de la musique urbaine.">
-    <meta property="og:image" content="https://blakarecordz.com/images/photo-studio1.jpg">
-    <meta property="og:url" content="https://blakarecordz.com">
-    <meta property="og:type" content="website">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Bigi Blaka | Blaka Recordz">
-    <meta name="twitter:description" content="Studio d'enregistrement et Label de musique.">
-    <meta name="twitter:image" content="https://blakarecordz.com/images/photo-studio1.jpg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blaka Recordz | Accueil</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="images/logo.png">
-
+    .nav-logo-img{width:46px;height:46px;object-fit:contain;filter:drop-shadow(0 0 8px rgba(201,168,76,.4));transition:filter .3s,transform .3s;flex-shrink:0}
+    .nav-logo:hover .nav-logo-img{filter:drop-shadow(0 0 14px rgba(201,168,76,.7));transform:scale(1.05)}
+  </style>
 </head>
 <body>
 
-<header>
-    <nav>
-        <a href="./">
-            <img src="images/logo.png" alt="Logo Bigi Blaka" class="logo" title="logo">
-        </a>
-        <div class="nav-container">
-            <ul>
-                <li><a href="./">Accueil</a></li>
-                <li><a href="#musique">Musique</a></li>
-                <li><a href="#production">Production</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li style="display: flex; align-items: center;">
-                    <input type="text" id="searchBar" placeholder="Rechercher..." style="display:none; margin-right:10px; padding:5px; border-radius:5px; border:none;">
-                    <i class="fas fa-search search-icon" id="searchBtn" style="color: #FF8C00; cursor:pointer;"></i>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
+<!-- ══ NAV ══ -->
+<nav id="nav">
+<a href="index.html" class="nav-logo">
+    <img src="images/logo.png" alt="Blaka Recordz Logo" class="logo-png" style="width: 40px; height: auto; flex-shrink: 0;">
+    BLAKA RECORDZ
+  </a>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#reservation">R&#233;servations</a></li>
+      <li><a href="#collabs">Collaborations</a></li>
+      <li><a href="hits.html">Hits</a></li>
+      <li><a href="beats.html">Beats</a></li>
+      <li><a href="sons.html">Sons</a></li>
+      <li><a href="realisations.html">Vid&#233;os</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle"><div class="toggle-ball"><span id="themeEmoji">&#127769;</span></div></button>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <p class="subtitle">Manager d'expérience</p>
-                <h1>Bigi Blaka</h1>
-                <p class="description">
-                    Rappeur, Beatmaker & Producer. Créateur de sons uniques et gestionnaire de talents.
-                </p>
-                <a href="#" class="btn-main">Découvrir mes projets</a>
-            </div>
-            <div class="hero-image"></div>
-        </section>
-
-        <section class="about-label">
-    <div class="container">
-        <h2 class="section-title">L'Évolution : Blaka Music Group</h2>
-        <p class="intro-text">
-            Plus qu'un studio, une institution. <strong>Blaka Music Group (BMG)</strong> est le nouveau pilier de l'industrie musicale, regroupant la production sonore de <em>Blaka Recordz</em> et l'expertise visuelle de <em>Black Contrast Entertainment</em>. 
-        </p>
-        <div class="announcement-banner">
-            <i class="fas fa-bullhorn"></i>
-            <span>OUVERTURE OFFICIELLE TRÈS BIENTÔT — RESTEZ BRANCHÉS !</span>
-        </div>
-    </div>
-</section>
-
-<section id="production" class="portfolio">
-    <h2 class="section-title">Mes Services & Expertise</h2>
-    
-    <div class="grid-container">
-        <a href="hits.html" class="card">
-            <div class="card-image rappeur">
-                <span class="badge">Artiste</span>
-            </div>
-            <div class="card-info">
-                <h3>Mes Hits</h3>
-                <p>Découvrez les sons marquants réalisés pour moi ou d'autres artistes.</p>
-            </div>
-        </a>
-
-        <a href="beats.html" class="card">
-            <div class="card-image beatmaker">
-                <span class="badge">Studio</span>
-            </div>
-            <div class="card-info">
-                <h3>Catalogue Beats</h3>
-                <p>Écoutez des extraits d'instrus originales et passez commande.</p>
-            </div>
-        </a>
-
-        <a href="realisations.html" class="card">
-            <div class="card-image manager">
-                <span class="badge">Vidéo</span>
-            </div>
-            <div class="card-info">
-                <h3>Réalisations Vidéo</h3>
-                <p>Vidéos et clips déjà publiés sur YouTube et réseaux sociaux.</p>
-            </div>
-        </a>
-    </div>
-</section>
-
-<section id="musique" class="projects">
-    <h2 class="section-title">Dernières Sorties</h2>
-    
-    <div class="projects-container"> 
-        
-        <div class="project-item">
-            <div class="video-placeholder">
-                <iframe src="https://www.youtube.com/embed/tPLnlV9-rYs" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <h4>Clip : LAJAN BEL</h4>
-            <p>Featuring : Schmat Heo</p>
-        </div>
-
-        <div class="project-item">
-            <div class="video-placeholder">
-                <iframe src="https://www.youtube.com/embed/FEeOwTFJkAY" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <h4>Track : K O M I K</h4>
-            <p>Featuring : Djiodji</p>
-        </div>
-
-    </div> </section>
-
-    <section id="faq" class="faq-section">
-    <h2 class="section-title">Questions Fréquentes</h2>
-    <div class="faq-container">
-        <div class="faq-item">
-            <button class="faq-question">Comment envoyer une démo ?</button>
-            <div class="faq-answer">
-                <p>Envoie ton lien (SoundCloud, Dropbox) via le formulaire de contact ci-dessous ou directement par DM sur Instagram.</p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">Quels sont tes tarifs de production ?</button>
-            <div class="faq-answer">
-                <p>Chaque projet est unique. Contacte-moi avec les détails de ton morceau pour obtenir un devis personnalisé (mix, mastering ou beatmaking).</p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-question">Acceptes-tu de nouveaux artistes en management ?</button>
-            <div class="faq-answer">
-                <p>Je suis toujours à l'écoute de nouveaux talents. Si ton univers correspond à l'ADN de Blaka Recordz, nous pourrons en discuter.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="contact" class="contact-section">
-    <h2 class="section-title">Travaillons Ensemble</h2>
-    <form action="https://formspree.io/f/mnjdpzek" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Ton Nom" required>
-        <input type="email" name="email" placeholder="Ton Email" required>
-        <textarea name="message" placeholder="Parle-moi de ton projet..." required></textarea>
-        <button type="submit" class="btn-main">Envoyer le message</button>
-        <p class="privacy-note">
-        <i class="fas fa-lock"></i> 
-        Vos informations (email, numéro) sont sécurisées et ne seront utilisées que pour répondre à votre demande.
-    </p>
-    </form>
-    
-</section>
-
-    </main>
-
-    <script src="script.js"></script>
-
-    <footer>
-    <div class="footer-content">
-        <img src="images/logo.png" alt="Logo Blaka" class="footer-logo">
-       <div class="social-links">
-    <a href="https://www.instagram.com/bigiblaka/" target="_blank">
-        <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://www.youtube.com/@bigiblaka" target="_blank">
-        <i class="fab fa-youtube"></i>
-    </a>
-    <a href="https://open.spotify.com/artist/6nJcfxG0vQfcubQydZkBJw?si=yxzH-rvGTPWTZfclqnDQZw" target="_blank">
-        <i class="fab fa-spotify"></i>
-    </a>
+<!-- ══ MENU MOBILE ══ -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services"         onclick="closeMenu()">Services</a>
+  <a href="#reservation"      onclick="closeMenu()">R&#233;servations</a>
+  <a href="#collabs"          onclick="closeMenu()">Collabs</a>
+  <a href="hits.html"         onclick="closeMenu()">Hits</a>
+  <a href="beats.html"        onclick="closeMenu()">Beats</a>
+  <a href="sons.html"            onclick="closeMenu()">Sons</a>
+  <a href="realisations.html" onclick="closeMenu()">Vid&#233;os</a>
+  <a href="contact.html"      onclick="closeMenu()">Contact</a>
 </div>
-<section id="donation" class="donation-section">
-    <div class="donation-content">
-        <h2>Soutenir Blaka Recordz</h2>
-        <p>Aidez-nous à financer les futurs projets et la production du label.</p>
-        <a href="https://www.paypal.com/ncp/payment/35WXM3Y7CJUZC" target="_blank" class="btn-donate">
-            <i class="fab fa-paypal"></i> Faire un don
-        </a>
+
+<!-- ══ HERO STUDIO ══ -->
+<section id="home-hero">
+  <div class="hero-bg"></div>
+  <div class="hero-fade"></div>
+  <div class="container hero-inner">
+    <p class="hero-eyebrow">Studio d&#x27;enregistrement &amp; Label &#8212; Ha&#239;ti</p>
+    <h1 class="hero-title">BIGI <em>BLAKA</em></h1>
+    <p class="hero-desc">Bienvenue au c&#339;ur de <strong style="color:var(--gold)">Blaka Recordz</strong> &#8212; le studio o&#249; chaque son devient une signature. Production, mix, mastering et management de talents sous un m&#234;me toit.</p>
+    <div class="hero-actions">
+      <a href="#reservation" class="btn btn-gold">R&#233;server maintenant &#8594;</a>
+      <a href="#hits"        class="btn btn-outline">&#201;couter les hits</a>
     </div>
+  </div>
+  <div class="hero-scroll"><span>D&#233;filer</span><div class="scroll-bar"></div></div>
 </section>
 
+<!-- ══ TICKER ══ -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span class="ticker-item">BLAKA RECORDZ<span class="ticker-dot"> &#10022; </span></span>
+    <span class="ticker-item">BEATMAKING<span class="ticker-dot"> &#10022; </span></span>
+    <span class="ticker-item">MIX &amp; MASTERING<span class="ticker-dot"> &#10022; </span></span>
+    <span class="ticker-item">BLAKA MUSIC GROUP<span class="ticker-dot"> &#10022; </span></span>
+    <span class="ticker-item">ENREGISTREMENT<span class="ticker-dot"> &#10022; </span></span>
+    <span class="ticker-item">MANAGEMENT<span class="ticker-dot"> &#10022; </span></span>
+    <span class="ticker-item">CR&#201;ATION VISUELLE<span class="ticker-dot"> &#10022; </span></span>
+    <span class="ticker-item">BLAKA RECORDZ<span class="ticker-dot"> &#10022; </span></span>
+    <span class="ticker-item">BEATMAKING<span class="ticker-dot"> &#10022; </span></span>
+    <span class="ticker-item">MIX &amp; MASTERING<span class="ticker-dot"> &#10022; </span></span>
+    <span class="ticker-item">BLAKA MUSIC GROUP<span class="ticker-dot"> &#10022; </span></span>
+    <span class="ticker-item">ENREGISTREMENT<span class="ticker-dot"> &#10022; </span></span>
+    <span class="ticker-item">MANAGEMENT<span class="ticker-dot"> &#10022; </span></span>
+    <span class="ticker-item">CR&#201;ATION VISUELLE<span class="ticker-dot"> &#10022; </span></span>
+  </div>
+</div>
+
+<!-- ══ PARTENAIRES ══ -->
+<section id="partners">
+  <div class="container">
+    <p class="partners-label reveal">Partenaires &amp; Labels associ&#233;s</p>
+    <div class="partners-row reveal">
+      <div class="partner-card"><div class="partner-name">OTS</div><div class="partner-sub">OTS Music Label</div></div>
+      <div class="partner-card"><div class="partner-name">BMG</div><div class="partner-sub">Blaka Music Group</div></div>
+      <div class="partner-card"><div class="partner-name">REGEE</div><div class="partner-sub">Regee One Entertainment</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES ══ -->
+<section id="services">
+  <div class="container">
+    <div class="section-header">
+      <span class="label reveal">// Ce que nous faisons</span>
+      <div class="section-header-row">
+        <h2 class="display reveal" style="font-size:clamp(44px,7vw,80px)">NOS SERVICES</h2>
+        <p class="reveal" style="max-width:360px;font-size:14px;color:var(--muted);line-height:1.7">Tout ce dont ton projet musical a besoin &#8212; du micro au master.</p>
+      </div>
+    </div>
+    <div class="services-grid reveal">
+      <div class="svc-card">
+        <div class="svc-num">01</div><span class="svc-icon">&#127908;</span>
+        <h3>Enregistrement</h3>
+        <p>Studio acoustique &#233;quip&#233; pour capturer chaque d&#233;tail de ta voix et tes instruments avec une qualit&#233; professionnelle.</p>
+        <span class="svc-tag">Sur rendez-vous</span>
+      </div>
+      <div class="svc-card">
+        <div class="svc-num">02</div><span class="svc-icon">&#127899;</span>
+        <h3>Mixage</h3>
+        <p>Chaque piste &#233;quilibr&#233;e, sculpt&#233;e et plac&#233;e dans l&#x27;espace pour une coh&#233;rence sonore et une profondeur professionnelle.</p>
+        <span class="svc-tag">Projet sur devis</span>
+      </div>
+      <div class="svc-card">
+        <div class="svc-num">03</div><span class="svc-icon">&#128266;</span>
+        <h3>Mastering</h3>
+        <p>Finition pro aux standards des plateformes &#8212; Spotify, Apple Music, YouTube &#8212; pour un rendu fort sur tous les syst&#232;mes.</p>
+        <span class="svc-tag">Livraison rapide</span>
+      </div>
+      <div class="svc-card">
+        <div class="svc-num">04</div><span class="svc-icon">&#127912;</span>
+        <h3>Cr&#233;ation Covers</h3>
+        <p>Direction artistique visuelle &#8212; pochettes, visuels de singles et assets complets pour tes r&#233;seaux sociaux.</p>
+        <span class="svc-tag">Design sur mesure</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BOOKING ══ -->
+<section id="reservation">
+  <div class="booking-band reveal">
+    <div class="booking-text">
+      <h2>R&#233;serve ta session studio</h2>
+      <p>Disponibilit&#233;s limit&#233;es. Envoie ta demande et nous confirmons sous 24h avec toutes les infos pratiques pour ton arriv&#233;e.</p>
+    </div>
+    <div class="booking-actions">
+      <a href="#contact" class="btn btn-gold">R&#233;server maintenant</a>
+      <a href="https://wa.me/50937233626" class="btn btn-wa" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ COLLABORATIONS ══ -->
+<section id="collabs">
+  <div class="container">
+    <div class="section-header">
+      <span class="label reveal">// Ils ont enregistr&#233; ici</span>
+      <div class="section-header-row">
+        <h2 class="display reveal" style="font-size:clamp(44px,7vw,80px)">NOS<br>COLLABORATIONS</h2>
+        <p class="reveal" style="max-width:360px;font-size:14px;color:var(--muted);line-height:1.7">Des artistes ha&#239;tiens qui ont fait confiance &#224; Blaka Recordz pour donner vie &#224; leur musique.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Galerie d&#233;filante — remplace les src par tes vraies photos dans /images/ -->
+  <div class="collab-track-outer">
+    <div class="collab-track">
+      <!-- Cartes originales -->
+      <a href="images/collab-cator-gshyt.png" class="collab-card" target="_blank">
+        <img class="collab-img" src="images/collab-cator-gshyt.png" alt="Cator Gshyt"/>
+        <div class="collab-info"><span class="collab-tag">Rap &#183; Trap</span><span class="collab-name">CATOR GSHYT</span><p class="collab-desc">Manifestation &#183; Production 2019</p></div>
+      </a>
+      <a href="images/collab-dan-ruff.png" class="collab-card" target="_blank">
+        <img class="collab-img" src="images/collab-dan-ruff.png" alt="Dan Ruff"/>
+        <div class="collab-info"><span class="collab-tag">Rap &#183; Boombap</span><span class="collab-name">DAN RUFF</span><p class="collab-desc">Cypher &#183; TMG &#183; Production 2018</p></div>
+      </a>
+      <a href="images/collab-gshine-zion.png" class="collab-card" target="_blank">
+        <img class="collab-img" src="images/collab-gshine-zion.png" alt="Gshine Zion"/>
+        <div class="collab-info"><span class="collab-tag">Rap &#183; Hip-Hop</span><span class="collab-name">GSHINE ZION</span><p class="collab-desc">Freestyle &#183; Production 2017</p></div>
+      </a>
+      <a href="images/collab-mikaben-kadilac.png" class="collab-card" target="_blank">
+        <img class="collab-img" src="images/collab-mikaben-kadilac.png" alt="Mikaben Kadilac"/>
+        <div class="collab-info"><span class="collab-tag">Trap &#183; 2020</span><span class="collab-name">MIKABEN KADILAC</span><p class="collab-desc">Mikaben &#183; Kadilac &#183; Production 2020</p></div>
+      </a>
+      <a href="images/collab-fite-cash.png" class="collab-card" target="_blank">
+        <img class="collab-img" src="images/collab-fite-cash.png" alt="Cash Homie"/>
+        <div class="collab-info"><span class="collab-tag">Rap &#183; 2021</span><span class="collab-name">CASH HOMIE</span><p class="collab-desc">Freestyle &#183; Production 2021</p></div>
+      </a>
+      <!-- Duplicata pour boucle seamless -->
+      <a href="images/collab-cator-gshyt.png" class="collab-card" aria-hidden="true" tabindex="-1" target="_blank">
+        <img class="collab-img" src="images/collab-cator-gshyt.png" alt=""/>
+        <div class="collab-info"><span class="collab-tag">Rap &#183; Trap</span><span class="collab-name">CATOR GSHYT</span><p class="collab-desc">Manifestation &#183; Production 2019</p></div>
+      </a>
+      <a href="images/collab-dan-ruff.png" class="collab-card" aria-hidden="true" tabindex="-1" target="_blank">
+        <img class="collab-img" src="images/collab-dan-ruff.png" alt=""/>
+        <div class="collab-info"><span class="collab-tag">Rap &#183; Boombap</span><span class="collab-name">DAN RUFF</span><p class="collab-desc">Cypher &#183; TMG &#183; Production 2018</p></div>
+      </a>
+      <a href="images/collab-gshine-zion.png" class="collab-card" aria-hidden="true" tabindex="-1" target="_blank">
+        <img class="collab-img" src="images/collab-gshine-zion.png" alt=""/>
+        <div class="collab-info"><span class="collab-tag">Rap &#183; Hip-Hop</span><span class="collab-name">GSHINE ZION</span><p class="collab-desc">Freestyle &#183; Production 2017</p></div>
+      </a>
+      <a href="images/collab-mikaben-kadilac.png" class="collab-card" aria-hidden="true" tabindex="-1" target="_blank">
+        <img class="collab-img" src="images/collab-mikaben-kadilac.png" alt=""/>
+        <div class="collab-info"><span class="collab-tag">Trap &#183; 2020</span><span class="collab-name">MIKABEN KADILAC</span><p class="collab-desc">Mikaben &#183; Kadilac &#183; Production 2020</p></div>
+      </a>
+      <a href="images/collab-fite-cash.png" class="collab-card" aria-hidden="true" tabindex="-1" target="_blank">
+        <img class="collab-img" src="images/collab-fite-cash.png" alt=""/>
+        <div class="collab-info"><span class="collab-tag">Rap &#183; 2021</span><span class="collab-name">CASH HOMIE</span><p class="collab-desc">Freestyle &#183; Production 2021</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ HITS & RELEASES ══ -->
+<section id="hits">
+  <div class="container">
+    <div class="section-header">
+      <span class="label reveal">// Derni&#232;res sorties</span>
+      <div class="section-header-row">
+        <h2 class="display reveal" style="font-size:clamp(44px,7vw,80px)">HITS &amp;<br>RELEASES</h2>
+        <a href="hits.html" class="btn btn-outline reveal">Voir tous les hits &#8594;</a>
+      </div>
+    </div>
+
+    <!-- 4 r&#233;cents — toujours visibles -->
+    <div class="hits-yt-grid reveal">
+      <div class="yt-wrap">
+        <div class="yt-frame-box">
+          <iframe src="https://www.youtube.com/embed/KXHXWC6bS98?si=HzYdQRReaJR0tIro&rel=0" title="Byen Rapid" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="yt-meta"><span class="yt-tag">Clip Officiel &#183; 2024</span><div class="yt-title">BYEN RAPID</div><p class="yt-sub">2G &#215; MJ-Flex &#215; Shmat Heo &#8212; Prod. Bigi Blaka</p></div>
+      </div>
+      <div class="yt-wrap">
+        <div class="yt-frame-box">
+          <iframe src="https://www.youtube.com/embed/yXhl6okoRBA?si=buJzF18GvbhliVa9&rel=0" title="Backup Maladren" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="yt-meta"><span class="yt-tag">Clip Officiel &#183; 2023</span><div class="yt-title">BACKUP MALADREN</div><p class="yt-sub">Keke Le Roi &#215; 300-Maladren &#215; Ekilib &#8212; Prod. Bigi Blaka</p></div>
+      </div>
+      <div class="yt-wrap">
+        <div class="yt-frame-box">
+          <iframe src="https://www.youtube.com/embed/9UI5qua9ITs?si=B18o5VX9BJtyblOn&rel=0" title="An Cibogue" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="yt-meta"><span class="yt-tag">Clip Officiel &#183; 2022</span><div class="yt-title">AN CIBOGUE</div><p class="yt-sub">Dope Family &#8212; Prod. Bigi Blaka</p></div>
+      </div>
+      <div class="yt-wrap">
+        <div class="yt-frame-box">
+          <iframe src="https://www.youtube.com/embed/If42m_9bjSA?si=VQEaZBIo9t52hRrr&rel=0" title="Apaw Fistre" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="yt-meta"><span class="yt-tag">Clip Officiel &#183; 2020</span><div class="yt-title">APAW FISTRE</div><p class="yt-sub">Keke Le Roi &#215; T-Prince TRG &#215; Junction P. &#8212; Prod. Bigi Blaka</p></div>
+      </div>
+    </div>
+
+    <!-- Bouton Voir Plus + 4 anciens -->
+    <div class="hits-voir-plus-area">
+      <button class="btn-voir-plus" id="btnVoirPlus" onclick="toggleHitsMore()">
+        <span id="btnVoirPlusLabel">Voir plus de sorties</span>
+        <div class="btn-chevron">&#9662;</div>
+      </button>
+      <div class="hits-extra-wrap" id="hitsExtraWrap">
+        <div class="hits-yt-grid-extra">
+          <div class="yt-wrap">
+            <div class="yt-frame-box">
+              <iframe src="https://www.youtube.com/embed/dwTEHSoY2EA?si=LEvIkJ5ng_hUUsCG&rel=0" title="Fèl Ak Level Ou" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="yt-meta"><span class="yt-tag">Clip Officiel &#183; 2020</span><div class="yt-title">F&#200;L AK LEVEL OU</div><p class="yt-sub">Bigi Blaka &#215; Figi Biznis &#215; One Pull-Up &#215; Savage &#215; Top Zoe</p></div>
+          </div>
+          <div class="yt-wrap">
+            <div class="yt-frame-box">
+              <iframe src="https://www.youtube.com/embed/Lx4l81EDxo8?si=8NerUBLug3Z5dr4i&rel=0" title="Pull-up An Bet" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="yt-meta"><span class="yt-tag">Clip Officiel &#183; 2020</span><div class="yt-title">PULL-UP AN BET</div><p class="yt-sub">Djou Dexter &#215; Kolonel &amp; Rocker-F. &#8212; Black Contrast Ent.</p></div>
+          </div>
+          <div class="yt-wrap">
+            <div class="yt-frame-box">
+              <iframe src="https://www.youtube.com/embed/TuZjGjoMPOw?si=D1mK9vXts4zTHqTT&rel=0" title="Flip-Flap" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="yt-meta"><span class="yt-tag">Clip Officiel &#183; 2019</span><div class="yt-title">FLIP-FLAP</div><p class="yt-sub">Iceberg &#215; Junction P. &#8212; Prod. Bigi Blaka</p></div>
+          </div>
+          <div class="yt-wrap">
+            <div class="yt-frame-box">
+              <iframe src="https://www.youtube.com/embed/wQCLN2pvFjY?si=hQzVA_k-mVkOQUfX&rel=0" title="Ou Lèd" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="yt-meta"><span class="yt-tag">Clip Officiel &#183; 2019</span><div class="yt-title">OU L&#200;D</div><p class="yt-sub">Junction Plug &#215; C.C.P &#8212; Prod. Bigi Blaka</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="label reveal">// Travaillons ensemble</span>
+      <h2 class="display reveal" style="font-size:clamp(44px,7vw,80px)">CONTACT</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-block reveal">
+        <h3>Coordonn&#233;es</h3>
+        <div class="contact-infos">
+          <div class="cinfo-row">
+            <div class="cinfo-icon">&#128241;</div>
+            <div><div class="cinfo-label">WhatsApp</div><a href="https://wa.me/50937233626" class="cinfo-value" target="_blank">+509 3723-3626</a></div>
+          </div>
+          <div class="cinfo-row">
+            <div class="cinfo-icon">&#128222;</div>
+            <div><div class="cinfo-label">Appel direct</div><a href="tel:+50943469043" class="cinfo-value">4346-9043</a></div>
+          </div>
+          <div class="cinfo-row">
+            <div class="cinfo-icon">&#9993;</div>
+            <div><div class="cinfo-label">Email</div><a href="/cdn-cgi/l/email-protection#99faf6f7edf8faedd9fbf5f8f2f8ebfcfaf6ebfde3b7faf6f4" class="cinfo-value"><span class="__cf_email__" data-cfemail="65060a0b11040611250709040e041700060a17011f4b060a08">[email&#160;protected]</span></a></div>
+          </div>
+        </div>
+        <div class="contact-ctas">
+          <a href="https://wa.me/50937233626" class="btn btn-wa" target="_blank" rel="noopener" style="justify-content:center">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            &#201;crire sur WhatsApp
+          </a>
+          <a href="tel:+50943469043" class="btn btn-outline" style="justify-content:center">&#128222; Appeler directement</a>
+        </div>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCD_DRIOumsxx5vX4uN1gp4Odz3jHy0M1Q&q=Blaka+Recordz,Petion-Ville,Haiti" width="100%" height="260" style="border:0;display:block" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="form-row-2">
+          <div class="form-group"><label>Nom</label><input type="text" placeholder="Ton nom"/></div>
+          <div class="form-group"><label>Email</label><input type="email" placeholder="ton@email.com"/></div>
+        </div>
+        <div class="form-group"><label>Num&#233;ro (facultatif)</label><input type="tel" placeholder="+509 &#183;&#183;&#183;"/></div>
+        <div class="form-group"><label>Objet</label>
+          <select>
+            <option value="" disabled selected>&#8212; S&#233;lectionner &#8212;</option>
+            <option>R&#233;servation studio</option>
+            <option>Demande de beat</option>
+            <option>Mix &amp; Mastering</option>
+            <option>Cr&#233;ation de cover</option>
+            <option>Collaboration artistique</option>
+            <option>Management</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Message</label><textarea placeholder="D&#233;cris ton projet, tes attentes, ta date souhait&#233;e&#8230;"></textarea></div>
+        <button type="button" class="btn btn-gold" style="width:100%;justify-content:center">Envoyer le message</button>
+        <p class="form-note">Tes donn&#233;es sont s&#233;curis&#233;es et utilis&#233;es uniquement pour r&#233;pondre &#224; ta demande.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DONATION ══ -->
+<section id="donation">
+  <div class="container">
+    <div class="donation-inner reveal">
+      <div class="donation-text">
+        <h3>Soutenir Blaka Recordz</h3>
+        <p>Chaque don contribue directement aux futurs projets du label &#8212; nouvelles productions, nouveaux artistes et d&#233;veloppement du studio.</p>
+      </div>
+      <a href="https://www.paypal.com/ncp/payment/35WXM3Y7CJUZC" class="btn btn-paypal" target="_blank" rel="noopener">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M7.076 21.337H2.47a.641.641 0 01-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 00-.607-.541c-.013.076-.026.175-.041.254-.93 4.778-4.005 7.201-9.138 7.201h-2.19a.563.563 0 00-.556.479l-1.187 7.527h-.506l-.24 1.516a.56.56 0 00.554.647h3.882c.46 0 .85-.334.922-.788.06-.26.76-4.852.816-5.09a.932.932 0 01.923-.788h.58c3.76 0 6.705-1.528 7.565-5.946.36-1.847.174-3.388-.777-4.471z"/></svg>
+        Faire un don &#8212; PayPal
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand"><span>B</span>LAKA RECORDZ</div>
+      <p class="footer-tagline">Studio &amp; Label &#8212; Production &#183; Mix &#183; Mastering &#183; Management</p>
+    </div>
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#reservation">R&#233;servations</a></li>
+        <li><a href="#collabs">Collaborations</a></li>
+        <li><a href="hits.html">Hits</a></li>
+        <li><a href="beats.html">Beats</a></li>
+        <li><a href="sons.html">Sons</a></li>
+        <li><a href="realisations.html">Vid&#233;os</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Labels</h4>
+      <ul>
+        <li><a href="#">Blaka Music Group</a></li>
+        <li><a href="#">OTS Music Label</a></li>
+        <li><a href="#">Regee One Entertainment</a></li>
+        <li><a href="#">Black Contrast Ent.</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Joindre</h4>
+      <ul>
+        <li><a href="https://wa.me/50937233626" target="_blank">WhatsApp &#183; +509 3723-3626</a></li>
+        <li><a href="tel:+50943469043">T&#233;l &#183; 4346-9043</a></li>
+        <li><a href="/cdn-cgi/l/email-protection#b4d7dbdac0d5d7c0f4d6d8d5dfd5c6d1d7dbc6d0ce9ad7dbd9"><span class="__cf_email__" data-cfemail="b9dad6d7cdd8dacdf9dbd5d8d2d8cbdcdad6cbddc397dad6d4">[email&#160;contact@blakarecordz.com]</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">&#169; 2026 BLAKA RECORDZ &#183; Tous droits r&#233;serv&#233;s &#183; Wood Jerry Fils-Aim&#233;</p>
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/bigiblaka/"  class="footer-social" target="_blank">IG</a>
+      <a href="https://www.facebook.com/bigiblaka"    class="footer-social" target="_blank">FB</a>
+      <a href="https://www.youtube.com/@bigiblaka"    class="footer-social" target="_blank">YT</a>
+      <a href="https://open.spotify.com/intl-fr/artist/6nJcfxG0vQfcubQydZkBJw" class="footer-social" target="_blank">SP</a>
+      <a href="https://music.apple.com/fr/artist/bigi-blaka/1842570494" class="footer-social" target="_blank">AP</a>
+      <a href="https://www.paypal.com/ncp/payment/35WXM3Y7CJUZC" class="footer-social" target="_blank">PP</a>
+    </div>
+  </div>
 </footer>
 
-<script>
-    const faqItems = document.querySelectorAll('.faq-item');
+<button id="scrollTop" aria-label="Retour en haut">&#8593;</button>
 
-    faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        question.addEventListener('click', () => {
-            item.classList.toggle('active');
-        });
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  const html=document.documentElement;
+  document.getElementById('themeToggle').addEventListener('click',()=>{
+    const d=html.dataset.theme==='dark';
+    html.dataset.theme=d?'light':'dark';
+    document.getElementById('themeEmoji').textContent=d?'&#9728;':'&#127769;';
+  });
+  const nav=document.getElementById('nav');
+  const st=document.getElementById('scrollTop');
+  window.addEventListener('scroll',()=>{
+    nav.classList.toggle('stuck',scrollY>60);
+    st.classList.toggle('visible',scrollY>400);
+  },{passive:true});
+  st.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+  document.getElementById('hamburger').addEventListener('click',()=>
+    document.getElementById('mobileMenu').classList.toggle('open'));
+  function closeMenu(){document.getElementById('mobileMenu').classList.remove('open')}
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',e=>{
+      const t=document.querySelector(a.getAttribute('href'));
+      if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}
     });
+  });
+  function toggleHitsMore(){
+    const btn=document.getElementById('btnVoirPlus');
+    const wrap=document.getElementById('hitsExtraWrap');
+    const lbl=document.getElementById('btnVoirPlusLabel');
+    const open=wrap.classList.toggle('open');
+    btn.classList.toggle('open',open);
+    lbl.textContent=open?'Voir moins':'Voir plus de sorties';
+    if(open)setTimeout(()=>ap.scrollIntoView({behavior:'smooth',block:'nearest'}),120);
+  }
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});
+  },{threshold:0.08});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{
+    el.style.transitionDelay=(i%5*0.09)+'s';
+    obs.observe(el);
+  });
 </script>
-
-<a href="#" class="back-to-top" id="backToTop">
-    <i class="fas fa-chevron-up"></i>
-</a>
-
-<a href="https://wa.me/50937233626?text=Bonjour%20Blaka%20Recordz,%20j'aimerais%20avoir%20des%20informations%20sur..." 
-   class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-</a>
-
-<script>
-    const backToTop = document.getElementById("backToTop");
-
-    window.onscroll = function() {
-        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-            backToTop.classList.add("show");
-        } else {
-            backToTop.classList.remove("show");
-        }
-    };
-</script>
-
-</div>
-        <p>&copy; 2024 Blaka Recordz. Tous droits réservés.</p>
-    </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
