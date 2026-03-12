@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="shortcut icon" href="favicon.png"/>
   <!-- ══ SEO META ══ -->
   <meta name="description" content="Blaka Recordz est le label et studio de production musicale de Bigi Blaka basé en Haïti. Beats, mixage, mastering, clips vidéo et management artistes depuis 2014."/>
   <meta name="keywords" content="Blaka Recordz, Bigi Blaka, studio enregistrement Haïti, beatmaker Haïti, rap haïtien, mix mastering, BMG, Black Contrast Entertainment"/>
@@ -318,7 +320,7 @@
     <div class="partners-row reveal">
       <div class="partner-card"><div class="partner-name">OTS</div><div class="partner-sub">OTS Music Label</div></div>
       <div class="partner-card"><div class="partner-name">BMG</div><div class="partner-sub">Blaka Music Group</div></div>
-      <div class="partner-card"><div class="partner-name">REGEE</div><div class="partner-sub">Regee One Entertainment</div></div>
+      <div class="partner-card"><div class="partner-name">REGEE</div><div class="partner-sub">Regee Entertainment</div></div>
     </div>
   </div>
 </section>
@@ -537,7 +539,7 @@
           </div>
           <div class="cinfo-row">
             <div class="cinfo-icon">&#9993;</div>
-            <div><div class="cinfo-label">Email</div><a href="/cdn-cgi/l/email-protection#99faf6f7edf8faedd9fbf5f8f2f8ebfcfaf6ebfde3b7faf6f4" class="cinfo-value"><span class="__cf_email__" data-cfemail="65060a0b11040611250709040e041700060a17011f4b060a08">[email&#160;protected]</span></a></div>
+            <div><div class="cinfo-label">Email</div><a href="mailto:contact@blakarecordz.com" class="cinfo-value">contact@blakarecordz.com</a></div>
           </div>
         </div>
         <div class="contact-ctas">
@@ -552,13 +554,14 @@
         </div>
       </div>
       <div class="reveal">
+        <form action="https://formspree.io/f/xnjgvael" method="POST">
         <div class="form-row-2">
-          <div class="form-group"><label>Nom</label><input type="text" placeholder="Ton nom"/></div>
-          <div class="form-group"><label>Email</label><input type="email" placeholder="ton@email.com"/></div>
+          <div class="form-group"><label>Nom</label><input type="text" name="nom" placeholder="Ton nom" required/></div>
+          <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="ton@email.com" required/></div>
         </div>
-        <div class="form-group"><label>Num&#233;ro (facultatif)</label><input type="tel" placeholder="+509 &#183;&#183;&#183;"/></div>
+        <div class="form-group"><label>Num&#233;ro (facultatif)</label><input type="tel" name="telephone" placeholder="+509 &#183;&#183;&#183;"/></div>
         <div class="form-group"><label>Objet</label>
-          <select>
+          <select name="objet" required>
             <option value="" disabled selected>&#8212; S&#233;lectionner &#8212;</option>
             <option>R&#233;servation studio</option>
             <option>Demande de beat</option>
@@ -569,9 +572,10 @@
             <option>Autre</option>
           </select>
         </div>
-        <div class="form-group"><label>Message</label><textarea placeholder="D&#233;cris ton projet, tes attentes, ta date souhait&#233;e&#8230;"></textarea></div>
-        <button type="button" class="btn btn-gold" style="width:100%;justify-content:center">Envoyer le message</button>
+        <div class="form-group"><label>Message</label><textarea name="message" placeholder="D&#233;cris ton projet, tes attentes, ta date souhait&#233;e&#8230;" required></textarea></div>
+        <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center">Envoyer le message</button>
         <p class="form-note">Tes donn&#233;es sont s&#233;curis&#233;es et utilis&#233;es uniquement pour r&#233;pondre &#224; ta demande.</p>
+        </form>
       </div>
     </div>
   </div>
@@ -618,7 +622,7 @@
       <ul>
         <li><a href="#">Blaka Music Group</a></li>
         <li><a href="#">OTS Music Label</a></li>
-        <li><a href="#">Regee One Entertainment</a></li>
+        <li><a href="#">Regee Entertainment</a></li>
         <li><a href="#">Black Contrast Ent.</a></li>
       </ul>
     </div>
@@ -627,7 +631,7 @@
       <ul>
         <li><a href="https://wa.me/50937233626" target="_blank">WhatsApp &#183; +509 3723-3626</a></li>
         <li><a href="tel:+50943469043">T&#233;l &#183; 4346-9043</a></li>
-        <li><a href="/cdn-cgi/l/email-protection#b4d7dbdac0d5d7c0f4d6d8d5dfd5c6d1d7dbc6d0ce9ad7dbd9"><span class="__cf_email__" data-cfemail="b9dad6d7cdd8dacdf9dbd5d8d2d8cbdcdad6cbddc397dad6d4">[email&#160;contact@blakarecordz.com]</span></a></li>
+        <li><a href="mailto:contact@blakarecordz.com">contact@blakarecordz.com</a></li>
       </ul>
     </div>
   </div>
@@ -646,7 +650,7 @@
 
 <button id="scrollTop" aria-label="Retour en haut">&#8593;</button>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   const html=document.documentElement;
   document.getElementById('themeToggle').addEventListener('click',()=>{
     const d=html.dataset.theme==='dark';
