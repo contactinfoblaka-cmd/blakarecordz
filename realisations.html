@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="shortcut icon" href="favicon.png"/>
   <!-- ══ SEO META ══ -->
   <meta name="description" content="Clips vidéo officiels produits par Black Contrast Entertainment, division vidéo de Blaka Recordz. Tournage, montage, color grading depuis 2018."/>
   <meta name="keywords" content="Black Contrast Entertainment, clips vidéo Haïti, tournage clip rap haïtien, réalisation vidéo, Blaka Recordz, Bigi Blaka"/>
@@ -503,7 +505,7 @@
         <div class="vcb-items">
           <div class="vcb-row"><div class="vcb-icon">📱</div><div><div class="vcb-lbl">WhatsApp</div><a href="https://wa.me/50937233626" class="vcb-val" target="_blank">+509 3723-3626</a></div></div>
           <div class="vcb-row"><div class="vcb-icon">📞</div><div><div class="vcb-lbl">Appel direct</div><a href="tel:+50943469043" class="vcb-val">4346-9043</a></div></div>
-          <div class="vcb-row"><div class="vcb-icon">✉</div><div><div class="vcb-lbl">Email</div><a href="/cdn-cgi/l/email-protection#b2d1dddcc6d3d1c6f2d0ded3d9d3c0d7d1ddc0d6c89cd1dddf" class="vcb-val"><span class="__cf_email__" data-cfemail="f695999882979582b6949a979d978493959984928cd895999b">[email&#160;protected]</span></a></div></div>
+          <div class="vcb-row"><div class="vcb-icon">✉</div><div><div class="vcb-lbl">Email</div><a href="mailto:contact@blakarecordz.com">contact@blakarecordz.com</a></div></div>
           <div class="vcb-row"><div class="vcb-icon">📸</div><div><div class="vcb-lbl">Instagram</div><a href="https://www.instagram.com/bigiblaka/" class="vcb-val" target="_blank">@bigiblaka</a></div></div>
         </div>
         <div class="vcb-note"><p>Après envoi, vous recevrez un <strong>résumé complet</strong> de votre demande avec toutes nos coordonnées. Réponse garantie sous <strong>48h ouvrables</strong>.</p></div>
@@ -513,19 +515,20 @@
       <div class="vform reveal">
         <span class="form-section-mini">01 — Informations artiste</span>
         <div class="fg-row2">
-          <div class="fg"><label>Nom / Nom de scène <span class="req">*</span></label><input type="text" id="f-name" placeholder="Ex: Bigi Blaka" required/></div>
-          <div class="fg"><label>WhatsApp / Téléphone <span class="req">*</span></label><input type="tel" id="f-tel" placeholder="+509 ···· ····" required/></div>
+          <form action="https://formspree.io/f/xnjgvael" method="POST">
+        <div class="fg"><label>Nom / Nom de scène <span class="req">*</span></label><input type="text" id="f-name" name="nom" placeholder="Ex: Bigi Blaka" required/></div>
+          <div class="fg"><label>WhatsApp / Téléphone <span class="req">*</span></label><input type="tel" id="f-tel" name="telephone" placeholder="+509 ···· ····" required/></div>
         </div>
-        <div class="fg"><label>Email de contact <span class="req">*</span></label><input type="email" id="f-email" placeholder="artiste@email.com" required/></div>
-        <div class="fg"><label>Lien réseaux / YouTube (facultatif)</label><input type="url" id="f-social" placeholder="https://www.instagram.com/..."/></div>
+        <div class="fg"><label>Email de contact <span class="req">*</span></label><input type="email" id="f-email" name="email" placeholder="artiste@email.com" required/></div>
+        <div class="fg"><label>Lien réseaux / YouTube (facultatif)</label><input type="url" id="f-social" name="reseaux" placeholder="https://www.instagram.com/..."/></div>
 
         <hr class="form-divider"/>
         <span class="form-section-mini">02 — Projet musical</span>
-        <div class="fg"><label>Titre de la chanson <span class="req">*</span></label><input type="text" id="f-track" placeholder="Ex: BYEN RAPID" required/></div>
+        <div class="fg"><label>Titre de la chanson <span class="req">*</span></label><input type="text" id="f-track" name="titre_son" placeholder="Ex: BYEN RAPID" required/></div>
         <div class="fg-row2">
-          <div class="fg"><label>Artistes feat.</label><input type="text" id="f-artists" placeholder="Ex: 2G x MJ-Flex"/></div>
+          <div class="fg"><label>Artistes feat.</label><input type="text" id="f-artists" name="artistes_feat" placeholder="Ex: 2G x MJ-Flex"/></div>
           <div class="fg"><label>Durée du son</label>
-            <select id="f-duration">
+            <select id="f-duration" name="duree">
               <option value="" disabled selected>— Sélectionner —</option>
               <option>Moins de 2 min</option><option>2 – 3 min</option><option>3 – 4 min</option><option>Plus de 4 min</option>
             </select>
@@ -554,7 +557,7 @@
         <span class="form-section-mini">03 — Type & format de clip</span>
         <div class="fg">
           <label>Type de clip <span class="req">*</span></label>
-          <select id="f-cliptype" required>
+          <select id="f-cliptype" name="type_clip" required>
             <option value="" disabled selected>— Sélectionner —</option>
             <option>Clip officiel (tournage extérieur)</option>
             <option>Clip officiel (en studio)</option>
@@ -601,14 +604,15 @@
 
         <hr class="form-divider"/>
         <span class="form-section-mini">05 — Vision artistique</span>
-        <div class="fg"><label>Décrivez votre vision <span class="req">*</span></label><textarea id="f-vision" placeholder="Ambiance, décors, couleurs, style… Références de clips que vous aimez." required></textarea></div>
-        <div class="fg"><label>Lien vers la chanson</label><input type="url" id="f-songlink" placeholder="https://soundcloud.com / drive.google.com…"/></div>
-        <div class="fg"><label>Informations complémentaires</label><textarea id="f-extra" placeholder="Lieu de tournage, figurants, contraintes…" style="min-height:80px"></textarea></div>
+        <div class="fg"><label>Décrivez votre vision <span class="req">*</span></label><textarea id="f-vision" name="vision" placeholder="Ambiance, décors, couleurs, style… Références de clips que vous aimez." required></textarea></div>
+        <div class="fg"><label>Lien vers la chanson</label><input type="url" id="f-songlink" name="lien_chanson" placeholder="https://soundcloud.com / drive.google.com…"/></div>
+        <div class="fg"><label>Informations complémentaires</label><textarea id="f-extra" name="infos_complementaires" placeholder="Lieu de tournage, figurants, contraintes…" style="min-height:80px"></textarea></div>
 
-        <button type="button" class="btn-submit" onclick="submitVideoForm()">
+        <button type="button" class="btn-submit" onclick="submitVideoForm()" type="submit">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
           Envoyer ma demande de clip
         </button>
+        </form>
         <p class="form-legal">Vos données sont confidentielles. Réponse sous 48h ouvrables.</p>
       </div>
     </div>
@@ -632,10 +636,10 @@
         <span class="cs-label">Résumé de votre demande</span>
         <div id="confirmSummary"></div>
       </div>
-      <span class="confirm-contacts-lbl">Pour nous répondre — <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="23404c4d5742405763414f4248425146404c5147590d404c4e">[email&#160;protected]</a></span>
+      <span class="confirm-contacts-lbl">Pour nous répondre — <a href="mailto:contact@blakarecordz.com">contact@blakarecordz.com</a></span>
       <div class="confirm-contacts">
         <a href="https://wa.me/50937233626" class="cc-card" target="_blank"><span class="cc-icon">📱</span><div><div class="cc-lbl">WhatsApp</div><div class="cc-val">+509 3723-3626</div></div></a>
-        <a href="/cdn-cgi/l/email-protection#accfc3c2d8cdcfd8eccec0cdc7cddec9cfc3dec8d682cfc3c1" class="cc-card"><span class="cc-icon">✉</span><div><div class="cc-lbl">Email</div><div class="cc-val"><span class="__cf_email__" data-cfemail="54373b3a20353720143638353f352631373b26302e7a373b39">[email&#160;protected]</span></div></div></a>
+        <a href="mailto:contact@blakarecordz.com">contact@blakarecordz.com</a>
         <a href="tel:+50943469043" class="cc-card"><span class="cc-icon">📞</span><div><div class="cc-lbl">Appel direct</div><div class="cc-val">4346-9043</div></div></a>
         <a href="https://www.instagram.com/bigiblaka/" class="cc-card" target="_blank"><span class="cc-icon">📸</span><div><div class="cc-lbl">Instagram</div><div class="cc-val">@bigiblaka</div></div></a>
       </div>
@@ -655,7 +659,7 @@
 </footer>
 <button id="scrollTop" aria-label="Haut">↑</button>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 const html=document.documentElement;
 document.getElementById('themeToggle').addEventListener('click',()=>{const d=html.dataset.theme==='dark';html.dataset.theme=d?'light':'dark';document.getElementById('themeEmoji').textContent=d?'☀️':'🌙';});
 const nav=document.getElementById('nav'),st=document.getElementById('scrollTop');
