@@ -253,6 +253,16 @@
       .collab-card{width:230px}
       .collab-track-outer::before,.collab-track-outer::after{width:60px}
     }
+    @media(max-width:768px){
+      /* Améliorations spécifiques mobile : espacement et lisibilité */
+      .hero-inner{padding-top:160px}
+      .hero-eyebrow{font-size:10px;line-height:1.6;letter-spacing:3px}
+      .hero-title{font-size:clamp(48px,10vw,88px);line-height:1.1}
+      .hero-desc{font-size:15px;line-height:1.7;max-width:100%}
+      .hero-actions{gap:12px}
+      .hero-scroll{bottom:22px}
+      .nav-right{gap:16px}
+    }
     @media(max-width:600px){
       .services-grid{grid-template-columns:1fr}
       .collab-card{width:195px}
@@ -963,7 +973,7 @@ document.querySelectorAll('.reveal').forEach(function(el,i){el.style.transitionD
 #brPopForm .mc-hidden {
   position: absolute;
   left: -5000px;
-  aria-hidden: true;
+  display: none;
 }
 
 .brp-input-wrap {
