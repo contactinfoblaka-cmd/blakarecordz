@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Blaka Recordz</title>
+  <script>
+    // GitHub Pages 404 redirect — redirige vers la bonne page
+    var seg = location.pathname.replace(/^\//, '').split('/')[0];
+    var known = ['hits','beats','sons','realisations','contact'];
+    if (known.indexOf(seg) !== -1) {
+      location.replace('/' + seg + '/');
+    } else {
+      location.replace('/');
+    }
+  </script>
+</head>
+<body></body>
+</html>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  sitemap.xml — Blaka Recordz
+  https://blakarecordz.com/sitemap.xml
+  Généré le : 2026-03-12
+  À soumettre sur : https://search.google.com/search-console
+-->
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xsi:schemaLocation="
+    http://www.sitemaps.org/schemas/sitemap/0.9
+    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- ══ PAGE D'ACCUEIL ══ -->
+  <url>
+    <loc>https://blakarecordz.com/</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://blakarecordz.com/images/logo.png</image:loc>
+      <image:title>Blaka Recordz — Logo officiel</image:title>
+      <image:caption>Logo de Blaka Recordz, label musical de Bigi Blaka, Port-au-Prince, Haïti</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ══ HITS & PRODUCTIONS ══ -->
+  <url>
+    <loc>https://blakarecordz.com/hits.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://blakarecordz.com/images/logo.png</image:loc>
+      <image:title>Hits & Productions — Blaka Recordz</image:title>
+      <image:caption>Clips officiels de Blaka Recordz : BYEN RAPID, BACKUP MALADREN, AN CIBOGUE et plus.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ══ CATALOGUE BEATS ══ -->
+  <url>
+    <loc>https://blakarecordz.com/beats.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://blakarecordz.com/images/logo.png</image:loc>
+      <image:title>Catalogue Beats — Blaka Recordz</image:title>
+      <image:caption>Beats Trap, Drill, Boom Bap à vendre par Bigi Blaka — Port-au-Prince, Haïti</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ══ DERNIERS SONS ══ -->
+  <url>
+    <loc>https://blakarecordz.com/sons.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://blakarecordz.com/images/logo.png</image:loc>
+      <image:title>Derniers Sons — Blaka Recordz</image:title>
+      <image:caption>Nouveautés musicales de Bigi Blaka & Blaka Recordz 2025-2026</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ══ RÉALISATIONS VIDÉO ══ -->
+  <url>
+    <loc>https://blakarecordz.com/realisations.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blakarecordz.com/images/logo.png</image:loc>
+      <image:title>Réalisations Vidéo — Black Contrast Entertainment / Blaka Recordz</image:title>
+      <image:caption>Clips vidéo officiels réalisés par Black Contrast Entertainment depuis 2018</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ══ CONTACT ══ -->
+  <url>
+    <loc>https://blakarecordz.com/contact.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://blakarecordz.com/images/logo.png</image:loc>
+      <image:title>Contact Blaka Recordz — Port-au-Prince, Haïti</image:title>
+      <image:caption>Réservation studio, achat de beats, commande de clip — Blaka Recordz, Port-au-Prince</image:caption>
+    </image:image>
+  </url>
+
+</urlset>

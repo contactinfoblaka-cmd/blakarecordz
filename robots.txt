@@ -1,0 +1,38 @@
+# ══════════════════════════════════════════════════════
+# robots.txt — Blaka Recordz
+# https://blakarecordz.com/robots.txt
+# Dernière mise à jour : 2026-03-12
+# ══════════════════════════════════════════════════════
+
+# ── Tous les robots : accès complet au site ──
+User-agent: *
+Allow: /
+
+# Bloquer les ressources inutiles pour le crawl budget
+Disallow: /cdn-cgi/
+Disallow: /assets/tmp/
+Disallow: /audio/
+Disallow: /*.json$
+
+# ── Google : priorité totale ──
+User-agent: Googlebot
+Allow: /
+Allow: /images/
+Allow: /*.html$
+Allow: /*.css$
+Allow: /*.js$
+
+# ── Google Images : indexer toutes les images ──
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /favicon.png
+
+# ── Bing ──
+User-agent: Bingbot
+Allow: /
+
+# ── Délai de courtoisie ──
+Crawl-delay: 1
+
+# ── Sitemap ──
+Sitemap: https://blakarecordz.com/sitemap.xml
